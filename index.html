@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <main class="body">
+        <h1 id="title">Create the perfect turtle</h1>
+        <p id="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Natus at necessitatibus numquam, est repudiandae accusantium earum provident aperiam velit iure quos ut ex
+            quasi,
+            rerum ipsa beatae veritatis minima minus.
+        </p>
+
+        <form action="/choices.php" id="survey-form" method="post">
+            <fieldset>
+                <legend>Customize your turtle</legend>
+
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" placeholder="Name" id="name" required>
+                <br>
+
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" placeholder="Email" id="email" required>
+                <br>
+
+                <label for="number" id="number-label">Age  :</label>
+                <input type="number" name="number" placeholder="Number of years" id="number" min="18" max="99">
+
+
+                <h3>The Turtle I want to be</h3>
+                <select name="turtle" id="dropdown">
+                    <option value="Donatello">Donatello</option>
+                    <option value="Leonardo">Leonardo</option>
+                    <option value="Michelangelo">Michelangelo</option>
+                    <option value="Raphael">Raphael</option>
+                </select>
+                <br />
+
+                <h3>Weapon of choice</h3>
+                <input type="radio" name="weapon" value="nunchucks">Nunchucks
+                <input type="radio" name="weapon" value="bo staff">Bo Staff
+                <input type="radio" name="weapon" value="katana">Katana
+                <input type="radio" name="weapon" value="sai">Sai
+                <br />
+                <h3>Bandana Color</h3>
+                <input type="checkbox" name="bandana" value="blue">Blue
+                <input type="checkbox" name="bandana" value="orange">Orange
+                <input type="checkbox" name="bandana" value="purple">Purple
+                <input type="checkbox" name="bandana" value="red">Red
+
+                <h3>Additional traits</h3>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <button id="submit">Submit</button>
+
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
